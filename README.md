@@ -50,7 +50,7 @@ Here’s the stack we’ll be working with:
 
 - **Frontend**: JavaScript (Vanilla, React)
 - **Backend**: Node.js, Express
-- **Databases**: MongoDB, MySQL
+- **Databases**: MongoDB, PostgreSQL
 - **ORM/ODM**: Sequelize, Mongoose
 - **Version Control**: Git, GitHub
 
