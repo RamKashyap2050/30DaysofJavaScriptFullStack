@@ -44,5 +44,5 @@ let lastName = "Doe";
 console.log(firstName + " " + lastName); // Concatenation -> "John Doe"
 
 // The Ternary Operator is a shorthand for control structures like if/else, which we will cover in the next session
-const age = 42;
-age == 42 ? console.log("Age Matched") : console.log("Age not matched");
+const age3 = 42;
+age3 == 42 ? console.log("Age Matched") : console.log("Age not matched");
