@@ -29,11 +29,11 @@ for (let i = 0; i < 5; i++) {
 }
 
 //While also does the same but keeps running as long as a condition is true.
-let i = 0;
+let k = 0;
 //Initialize a Variable and give a condition and then increment each time we output
-while (i < 5) {
-  console.log(i); // Output: 0 1 2 3 4
-  i++;
+while (k < 5) {
+  console.log(k); // Output: 0 1 2 3 4
+  k++;
 }
 
 //Do While is similar to While but only key difference is it executes Once even when the condition is false
