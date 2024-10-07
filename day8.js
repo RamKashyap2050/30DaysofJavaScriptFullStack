@@ -89,9 +89,9 @@ console.log(counter()); // Output: 3
 function greatestOfThree(a) {
   return function (b) {
     return function (c) {
-      if (a >= b && a >= c) {
+      if (a > b && a > c) {
         return a;
-      } else if (b >= a && b >= c) {
+      } else if (b > a && b > c) {
         return b;
       } else {
         return c;
@@ -100,8 +100,8 @@ function greatestOfThree(a) {
   };
 }
 
-greatestOfThree(1)(2)(3); //Output:3
-
+const greatest = greatestOfThree(1)(2)(3); //Output:3
+console.log(greatest);
 // (2) Implements recursion to calculate the nth Fibonacci number.
 
 function fibonacci(n) {
@@ -110,6 +110,9 @@ function fibonacci(n) {
   }
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+const fib = fibonacci(4);
+console.log("Fibonnaci", fib);
 
 // (3)Attaches an event listener to a button that toggles the visibility of a section of text.
 const btn = document.getElementById("btn");
@@ -127,7 +130,7 @@ async function fetchRestAPI() {
   try {
     const response = await fetch("https://restcountries.com/v3.1/all");
     const data = await response.json();
-
+    //This attaches all country names from Rest Countries API to List
     document.getElementById("CountriesList").innerHTML = data
       .map((country) => `<li>${country.name.common}</li>`)
       .join("");
