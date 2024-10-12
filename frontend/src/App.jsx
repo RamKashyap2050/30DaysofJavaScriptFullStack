@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import Day11 from "./day11";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import FourOFour from "./pages/FourOFour";
 //We are Using UseContext here to create an instance of UserContext which can be used across the tree of React without disruption
 // const UserContext = React.createContext();
 
@@ -36,9 +40,16 @@ import Day11 from "./day11";
 
 function App() {
   return (
-    <>
-      <Day11 />
-    </>
+    <Router>
+      <>{/* <Day11 /> */}</>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* 404 Route */}
+        <Route path="*" element={<FourOFour />} />
+      </Routes>
+    </Router>
+
     // <UserProvider>
     //   <UserProfile />
     // </UserProvider>
