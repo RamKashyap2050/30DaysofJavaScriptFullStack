@@ -3,7 +3,7 @@ import Day11 from "./day11";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import FourOFour from "./pages/FourOFour";
+import FourOFour from "./pages/fourofour";
 //We are Using UseContext here to create an instance of UserContext which can be used across the tree of React without disruption
 // const UserContext = React.createContext();
 
