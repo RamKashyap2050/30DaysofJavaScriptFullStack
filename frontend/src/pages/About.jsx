@@ -25,6 +25,12 @@ import HomeIcon from "@mui/icons-material/Home";
 const About = () => {
   const navigate = useNavigate();
   const RedirectToHomePage = () => navigate("/");
+  const handleVanillaJS = () => {
+    navigate("/vanillaJS");
+  };
+  const handleReactJS = () => {
+    navigate("/reactJS");
+  };
 
   return (
     <>
@@ -65,10 +71,16 @@ const About = () => {
               </Typography>
               <List>
                 <ListItem>
-                  <ListItemText primary="Days 1-8: Vanilla JavaScript Basics and Advanced Concepts" />
+                  <ListItemText
+                    primary="Days 1-8: Vanilla JavaScript Basics and Advanced Concepts"
+                    onClick={handleVanillaJS}
+                  />
                 </ListItem>
                 <ListItem>
-                  <ListItemText primary="Days 9-16: React - Components, Props, Hooks, and Routing" />
+                  <ListItemText
+                    primary="Days 9-16: React - Components, Props, Hooks, and Routing"
+                    onClick={handleReactJS}
+                  />
                 </ListItem>
                 <ListItem>
                   <ListItemText primary="Days 17-20: Redux, State Management, and Context API" />

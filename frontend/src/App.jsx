@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import FourOFour from "./pages/fourofour";
+import VanillaJS from "./pages/VanillaJS";
+import ReactJS from "./pages/ReactJS";
 //We are Using UseContext here to create an instance of UserContext which can be used across the tree of React without disruption
 // const UserContext = React.createContext();
 
@@ -45,6 +47,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/vanillaJS" element={<VanillaJS />} />
+        <Route path="/reactJS" element={<ReactJS />} />
         {/* 404 Route */}
         <Route path="*" element={<FourOFour />} />
       </Routes>
