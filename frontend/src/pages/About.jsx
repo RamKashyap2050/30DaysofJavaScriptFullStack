@@ -71,10 +71,13 @@ const About = () => {
                   <ListItemText primary="Days 9-16: React - Components, Props, Hooks, and Routing" />
                 </ListItem>
                 <ListItem>
-                  <ListItemText primary="Days 17-24: Redux, State Management, and Context API" />
+                  <ListItemText primary="Days 17-20: Redux, State Management, and Context API" />
                 </ListItem>
                 <ListItem>
-                  <ListItemText primary="Days 25-30: DevOps, Docker, Kubernetes, CI/CD Pipelines" />
+                  <ListItemText primary="Days 21-26: NodeJS, MongoDB, PostgreSQL, Express and Much More " />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Days 27-30: Hands on Full Stack Project" />
                 </ListItem>
               </List>
               <Typography variant="body1" paragraph>
